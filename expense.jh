@@ -1,0 +1,9 @@
+
+entity Expense {
+	descripption String,
+    amount Double
+    expenseDate LocalDate
+}
+
+
+
