@@ -1,0 +1,12 @@
+version: '2'
+services:
+  expense-postgresql:
+    image: postgres:12.3
+    # volumes:
+    #     - ~/volumes/jhipster/expense/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=expense
+      - POSTGRES_PASSWORD=
+      - POSTGRES_HOST_AUTH_METHOD=trust
+    ports:
+      - 5432:5432
